@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+	<title>Django - Pokedex</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/static.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    </head>
+    <body>
+	<div class="alert alert-danger margin"><center>POKEDEX - DJANGO</center></div>
+	<div class="alert alert-primary margin"><center>MENU<br><a href="{% url 'home' %}">HOME</a> | <a href="{% url 'pokedex_index' %}">POKEDEX</a></center></div>
+	{% block content %}
+	{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for pokemon in pokemons %}
+	{% if pokemon.public %}
+	    <div class="card margin">
+		<center>
+		<div class="card-title">
+		    {% if pokemon.element == "leaf" %}
+			<div class="alert alert-success"><b>{{pokemon.pokemon}}</b></div>
+		    {% elif pokemon.element == "water" %}
+			<div class="alert alert-primary"><b>{{pokemon.pokemon}}</b></div>
+		    {% elif pokemon.element == "fire" %}
+			<div class="alert alert-danger"><b>{{pokemon.pokemon}}</b></div>
+		    {% else %}
+			<div class="alert alert-secondary">{{pokemon.pokemon}}</div>
+		    {% endif %}
+		</div>
+		<div class="card-body">
+		    <img src="/{{pokemon.photo}}">
+		</div>
+		</center>
+	    </div>
+	{% endif %}
+    {% endfor %}
+{% endblock %}
