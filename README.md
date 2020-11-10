@@ -1,6 +1,6 @@
 # django_pokedex
 
-<h1>Django Pokedex</h1>
+<h1>Django - Pokedex</h1>
 
 <p>Este projeto é foca em uma modesta pokeagenda utilizando python e o framework Django.</p>
 <p>This project focused in one modest pokedex using python and the Django framework.</p>
