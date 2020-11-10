@@ -20,7 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '7!$zy!8$ymn5$=)9ucvt%4-qyw_10g3^q$gs0&63cp9))m0%_l'
+
+SECRET_KEY = 'j&w-n+j%*rgp*ke5hoxw6=k$!4hcn_@kcb#0089+)yec^04y#o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #meus Apps
+    #meus apps
     'pokedex',
 ]
 

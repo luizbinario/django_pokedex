@@ -1,9 +1,7 @@
 from django.contrib import admin
 
-#Importando models
-from .models import Pokemon
-
 # Register your models here.
+from .models import Pokemon
 
 def make_public(modeladmin, request, queryset):
     queryset.update(public=True)
