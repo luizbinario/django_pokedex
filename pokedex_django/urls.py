@@ -17,6 +17,8 @@ from django.urls import path
 
 from pokedex.views import home, pokedex_index
 
+handler404 = 'pokedex.views.handler404'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 

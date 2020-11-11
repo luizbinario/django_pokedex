@@ -12,3 +12,6 @@ def pokedex_index(request):
     pokemons = Pokemon.objects.all()
     context = {'pokemons': pokemons}
     return render(request, "pokedex/index.html", context)
+
+def handler404(request, *args, **kwargs):
+    return render(request, '404.html', status=404)
